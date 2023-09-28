@@ -3,5 +3,5 @@
 
 while read content
 do
-  echo "$content" | cut -d '-d' -f1,3,6
+  echo "$content" | cut -d ':' -f1,3,6
 done < "/etc/passwd"
